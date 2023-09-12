@@ -28,6 +28,11 @@ android {
     if (project.android.hasProperty("namespace")) {
         namespace 'com.alexmiller.map_launcher'
     }
+    
+    kotlin {
+    jvmTarget = '1.8'
+}
+
 
     compileSdkVersion 33
 
