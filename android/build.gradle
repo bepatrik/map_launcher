@@ -29,8 +29,11 @@ android {
         namespace 'com.alexmiller.map_launcher'
     }
     
-    kotlin {
-    jvmTarget = '1.8'
+  kotlin {
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+    jvmToolchain(17)
 }
 
 
